@@ -1,7 +1,6 @@
-### Tutorial on the prediction of Gadd45β-MKK7 complex prediction using protein-protein docking
+# Tutorial on the prediction of Gadd45β-MKK7 complex prediction using protein-protein docking
 
-
-#In this tutorial we are going to study the structural complex between human MKK7 and human Gadd45B protein structures 
+###In this tutorial we are going to study the structural complex between human MKK7 and human Gadd45B protein structures 
 
 Introduction: the biological problem
 NF-kB/Rel factors control programmed cell death, and this control is crucial to oncogenesis, cancer chemoresistance, and antagonism of tumor necrosis factor (TNF) α-induced killing. With TNF, NF-kB-mediated protection involves suppression of the c-Jun-N-terminal kinase (JNK) cascade, and Gadd45β, a member of the Gadd45 family, was identified as a pivotal effector of this activity of NF-kB. Inhibition of TNFα-induced JNK signaling by Gadd45β depends on direct targeting of the JNK kinase, MKK7/JNKK2. The mechanism by which Gadd45β blunts MKK7, however, is unknown (Papa et al, JBC 2007, Tornatore et al, JMB 2008).
