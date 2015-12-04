@@ -14,11 +14,13 @@ The formation of the Gadd45β-MKK7 complex **enables insertion of the Gadd45β a
 Therefore, **the Gadd45β-MKK7 complex formation inhibits MKK7 by preventing it from binding ATP**.
 They also found that residues within putative Gadd45β acidic loops 1 and 2 – i.e. **Glu65, Glu66 and Glu113** – directly contact basic residues within the catalytic pocket of MKK7 – i.e **Lys149, Lys157 and Arg162**.
 
+##Sharpening your pencils
+
 Before starting the actual study of the interaction, we need to do a number of things to get ready.
 
-1) The crystal structure of MKK7 is available in the PDB. We need to identify the PDB code of the most appropriate conformation.
+1) The crystal structure of MKK7 is available in the **Protein Data Bank (PDB)**. We need to identify the PDB code of the most appropriate conformation.
 
-2) The crystal structure of Gadd45β is not available in the PDB. We need therefore to build a structural model using the homology modelling technique. We will do it with HHPred (http://toolkit.tuebingen.mpg.de/hhpred)
+2) The crystal structure of Gadd45β is not available in the PDB. We need therefore to **build a structural model** using the homology modelling technique. We will do it with HHPred (http://toolkit.tuebingen.mpg.de/hhpred). See the [tutorial on homology modelling](tutorial_on_homology_modelling.md)
 
 3) Structural models of complexes are more reliable if we can apply "restraints". These need to be extracted from our knowledge of the biology of the problem. In our case, we know that Gadd45β acidic loop 1 interacts with MKK7 Lys149, i.e. with the ATP binding site. Therefore, we have to identify such residue in the sequence of MKK7 using UniProt (MKK UniProt AC: O14733). We will use MKK7 Lys149 as constraint in building the model of the complex. This means that we also have to identify the ATP binding residue in the MKK7 PDB file. Notice that PDB residue numbering may differ from UniProt numbering.
 
