@@ -2,11 +2,9 @@
 
 In this tutorial we are going to predict and analyse the structural complex between the human MKK7 and Gadd45B protein structures. Before we start using bioinformatics tools and resources, we have to learn something about these two proteins and their interaction. 
 
-Studying the literature and having a good grasp on the biological problem you are dealing with, is essential to take full advantage of predictions. Predictions are simply predictions until you don't analyse them in the light of the knowledge deriving from wet experiments.
+> Studying the literature and having a good grasp on the biological problem you are dealing with, is essential to take full advantage of predictions. Predictions are simply predictions until you don't analyse them in the light of the knowledge deriving from wet experiments.
 
 ####The biological background: MKK7 and Gadd45B
-
->try this
 
 NF-kB/Rel factors control programmed cell death, and this control is crucial to oncogenesis, cancer chemoresistance, and antagonism of tumor necrosis factor (TNF) α-induced killing. With TNF, NF-kB-mediated protection involves suppression of the c-Jun-N-terminal kinase (JNK) cascade, and Gadd45β, a member of the Gadd45 family, was identified as a pivotal effector of this activity of NF-kB. Inhibition of TNFα-induced JNK signaling by Gadd45β depends on direct targeting of the JNK kinase, MKK7/JNKK2. The mechanism by which Gadd45β blunts MKK7, however, is unknown (Papa et al, JBC 2007, Tornatore et al, JMB 2008).
 
