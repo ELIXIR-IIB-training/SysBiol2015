@@ -92,8 +92,6 @@ A search is made through the PDB for known loops containing endpoints that match
 
 
 =======
-![](img/pdb_homepage.png)
->>>>>>> dee071b657fadd1c1a893f88e5c620a3bef5ce30
 
 2. Homology model of Gadd45β
 a) First, we have to identify the protein sequence of Gadd45β. Go to UniProt (http://www.uniprot.org), type the Gadd45β UniProt AC (O75293) in the text box at the top and click on Search. On the result page, go to the sequence information (you can scroll-down until you reach the Sequence section or directly click on the "Sequence" link on the left). Click on the FASTA link and copy the sequence in FASTA format. 
