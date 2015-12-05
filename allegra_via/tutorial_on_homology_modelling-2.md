@@ -1,5 +1,5 @@
 
-###Homology Modelling
+##Homology Modelling
 
 In this tutorial we will see how to build the homology model of Gadd45β. 
 
@@ -95,9 +95,7 @@ Having identified one or more possible modeling templates using the initial scre
 * Gaps in the template sequences are treated by inserting missing residues the into the continuous backbone 
 * Changes in loop conformation are notoriously hard to predict 
 
-Loop modelling
-
-A search is made through the PDB for known loops containing endpoints that match the residues between which the loop is to be inserted. 
+Loop modelling: a search is made through the PDB for known loops containing endpoints that match the residues between which the loop is to be inserted. 
 
 ![stem loop](img/stem_loop.tiff) 
 
@@ -132,7 +130,7 @@ Valuable resources for homology modelling are MODELLER and SWISS-MODEL.
 ![modeller webpage](img/modeller.png)
 
 
-![swiss model homepage](img/swiss_model_2.png)
+![swiss model homepage](img/swiss_model_1.png)
 
 
 ![swiss model searchpage](img/swiss_model_2.png)
@@ -185,5 +183,5 @@ Then, Submit your Job.
 After downloading it, open the file with your favourite Text Editor (gedit, vim, pico, nano, etc) and take a few minutes to inspect the file.
 Before going back to the prediction of the Gadd45β-MKK7 complex, we will spend a few minutes to check the quality of our model. 
 
-###Model quality assessment
+##Model quality assessment
 Go to the [QMEAN Server for Model Quality Estimation](http://swissmodel.expasy.org/qmean/cgi/index.cgi), provide a name for your project (I suggest gadd45B_model_quality) and upload the gadd45B_model.pdb file and submit your job. Notice that the quality assessment may take some time. We will discuss the result of the QMEAN run later.
