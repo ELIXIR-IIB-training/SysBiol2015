@@ -174,7 +174,7 @@ You will end up in the "Modeller" page. The target-template alignment will appea
 
 Notice that, if you want to run a local version of Modeller, you have to copy this alignment and paste it to a local text file with .ali extension. This is NOT what we are going to do here. Here, we will use the Modeller installation provided by The Bioinformatics Toolkit. Therefore, check the options and insert a MODELLER-key (you can use "modeliranje") and a name for your Job in the Job-ID text box (I suggest "gadd45B_model" or something similar). 
 
-![modeller in the hhpred pipeline](img/hhpred_modeller.png]
+![modeller in the hhpred pipeline](img/hhpred_modeller.png)
 
 Then, Submit your Job.
 
