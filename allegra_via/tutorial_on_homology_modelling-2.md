@@ -101,9 +101,13 @@ A search is made through the PDB for known loops containing endpoints that match
 
 ![stem loop](img/stem_loop.tiff) 
 
+<<<<<<< HEAD
 ###Step 5: Side chain modeling 
 * Libraries of common rotamers extracted from high resolution X-ray structures are often used to position side chains 
 * The various rotamers are subsequently explored and scored with a variety of energy functions 
+=======
+![stem loop scheme 1](img/loop_selection_1.tiff) ---> ![stem loop scheme 1](img/loop_selection_2.tiff)
+>>>>>>> 8d9d197087c10b58d381720321039fbfc9839dd2
 
 ###Step 6: Model optimisation  
 * To predict the side chain rotamers with high accuracy, we need the correct backbone, which in turn depends on the rotamers and their packing
