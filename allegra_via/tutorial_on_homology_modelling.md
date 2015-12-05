@@ -39,10 +39,10 @@ Predictive methods
 ![model quality vs xray resolution](img/structure_resolution.png)
 
 sequence identity|model quality
----|---
-60-100%|Comparable with average resolution NMR. Substrate specificity
-30-60%|Starting point for site-directed mutagenesis studies
-< 30%| Serious errors
+-----------------|--------------
+60-100%          |Comparable with average resolution NMR. Substrate specificity
+30-60%           |Starting point for site-directed mutagenesis studies
+< 30%           | Serious errors
 
 1. Template recognition and initial alignment 
 2. Alignment correction 
