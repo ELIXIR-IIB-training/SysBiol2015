@@ -101,13 +101,9 @@ A search is made through the PDB for known loops containing endpoints that match
 
 ![stem loop](img/stem_loop.tiff) 
 
-<<<<<<< HEAD
 ###Step 5: Side chain modeling 
 * Libraries of common rotamers extracted from high resolution X-ray structures are often used to position side chains 
 * The various rotamers are subsequently explored and scored with a variety of energy functions 
-=======
-![stem loop scheme 1](img/loop_selection_1.tiff) ---> ![stem loop scheme 1](img/loop_selection_2.tiff)
->>>>>>> 8d9d197087c10b58d381720321039fbfc9839dd2
 
 ###Step 6: Model optimisation  
 * To predict the side chain rotamers with high accuracy, we need the correct backbone, which in turn depends on the rotamers and their packing
@@ -135,7 +131,10 @@ Valuable resources for homology modelling are MODELLER and SWISS-MODEL.
 
 ![modeller webpage](img/modeller.png)
 
+
 ![swiss model homepage](img/swiss_model_2.png)
+
+
 ![swiss model searchpage](img/swiss_model_2.png)
 
 
@@ -150,11 +149,13 @@ Go to UniProt (http://www.uniprot.org), type the Gadd45β UniProt AC (O75293) in
 Go to HHPred and paste the Gadd45β in FASTA format into the Input text box. Inspect all the Search Options (but keep the default ones).
 In the "Job Options" section, specify a Job-ID (e.g. gadd45B). Then Submit your job. The run may last up to a few minutes. However, Gadd45β is a small protein (160 aa) and the template search should be quite fast.
 
-![hhpred homepage](img/hhapred_homepage.png)
+![hhpred homepage](img/hhpred_homepage.png)
 
 3) In the HHpred result page, inspect the proposed templates. 
 
 ![hhpred template output page](img/hhpred_template_1.png)
+
+
 ![hhpred template output page 2](img/hhpred_template_2.png)
 
 * Which is the best one? 
