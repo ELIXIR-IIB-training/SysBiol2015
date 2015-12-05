@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ###Homology Modelling
 
 In this tutorial we will see how to build the homology model of Gadd45β. 
@@ -39,7 +39,7 @@ Predictive methods
 ![model quality vs xray resolution](img/structure_resolution.png)
 
 sequence identity|model quality
------------------|--------------
+:-----------------:|--------------
 60-100%          |Comparable with average resolution NMR. Substrate specificity
 30-60%           |Starting point for site-directed mutagenesis studies
 < 30%           | Serious errors
