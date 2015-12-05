@@ -172,7 +172,7 @@ In the "Job Options" section, specify a Job-ID (e.g. gadd45B). Then Submit your 
 5) Once you are satisfied with the best template inspection, select it, then click on the "Create model" link immediately below the "Result, Histogram, etc." menu bar. In the resulting page, check whether the selected best template is the one that you actually selected, then click on the "Create model from manually selected template(s)" button.
 You will end up in the "Modeller" page. The target-template alignment will appear in the Input text box ("Paste multiple alignment"). 
 
-![target template alignment](target_template_alignment.png)
+![target template alignment](img/target_template_alignment.png)
 
 Notice that, if you want to run a local version of Modeller, you have to copy this alignment and paste it to a local text file with .ali extension. This is NOT what we are going to do here. Here, we will use the Modeller installation provided by The Bioinformatics Toolkit. Therefore, check the options and insert a MODELLER-key (you can use "modeliranje") and a name for your Job in the Job-ID text box (I suggest "gadd45B_model" or something similar). 
 
