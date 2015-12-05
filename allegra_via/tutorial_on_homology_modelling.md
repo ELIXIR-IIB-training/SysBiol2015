@@ -1,4 +1,95 @@
-[pdb homepage] (img/pdb_homepage.png)
+###Homology Modelling
+
+In this tutorial we will see how to build the homology model of Gadd45β. 
+
+Where can we find the spatial coordinates of proteins? 
+![pdb homepage] (img/pdb_homepage.png)
+![pdb textfile] (img/pdb_texfile.png)
+
+What can we do when the coordinates are not available?
+
+*540.052 (SwissProt) + 33.995.348 (TrEMBL) May 2013
+*90.424 (PDB), 23.887 unique(<30% SeqId) May 2013
+*The difference between the number of sequences and structures is growing
+
+Computational approaches
+
+*Fast (minutes/hours), cheap (PC)
+*Correct solutions in ~60% of cases
+*Low risolution but often sufficient to many purposes
+
+Is it possible to predict a protein structure from its sequence? 
+
+Homology modelling
+
+*The structure of a protein is uniquely determined by its amino acid
+*Therefore the sequence should, in theory, contain enough information to obtain the structure 
+*Similar sequences have been found to adopt practically identical structures while distantly related sequences can still fold into similar structures
+
+![sequence-structure identity](img/chothia.png)
+Chothia et al. 1986; Sander et al. 1991; Rost 1999
+
+Predictive methods
+
+*Comparative modeling                      > 30% identity
+*Threading/Fold recognition                0 – 30% identity
+*Ab initio/de novo                         no homologous
+
+![model quality vs xray resolution](img/structure_resolution.png)
+
+sequence identity|model quality
+---|---
+60-100%|Comparable with average resolution NMR. Substrate specificity
+30-60%|Starting point for site-directed mutagenesis studies
+< 30%| Serious errors
+
+1. Template recognition and initial alignment 
+2. Alignment correction 
+3. Backbone generation 
+4. Loop modeling 
+5. Side chain modelling 
+6. Model optimisation 
+7. Model validation (by hand or using different servers)
+8. Iteration to correct mistakes (if any)
+
+![steps homology modelling] (img/steps_homology_modelling.png]
+
+###Step 1: Template recognition and initial alignment 
+*To identify the template, the program compares the query sequence to all the sequences of known structures in the PDB (e.g. BLAST)
+*Usually, the template structure with the highest sequence identity and coverage will be the first option
+*Other considerations:
+*conformational state (i.e. active or inactive) 
+*present co-factors
+*other molecules or multimeric complexes
+*It is possible to choose multiple templates and build multiple models 
+*It is possible to combine multiple templates into one structure that is used for modeling 
+
+###Step 2: Alignment correction
+Having identified one or more possible modeling templates using the initial screen described above, more sophisticated methods are needed to arrive at a better alignment 
+
+###Step 3: Backbone generation 
+*When the alignment is ready, the actual model building can start 
+*Creating the backbone is trivial for most of the model: one simply transfers the coordinates of those template residues that show up in the alignment with the model
+*If two aligned residues differ, the backbone coordinates for N, Cα, C and O and often also the Cβ can be copied
+*Conserved residues can be copied completely to provide an initial guess 
+
+###Step 4: Loop modeling  
+*For the majority of homology model building cases, the alignment between model and template sequence contains gaps 
+*Gaps in the model-sequence are addressed by omitting residues from the template 
+*Gaps in the template sequences are treated by inserting missing residues the into the continuous backbone 
+*Changes in loop conformation are notoriously hard to predict 
+
+Loop modelling
+
+A search is made through the PDB for known loops containing endpoints that match the residues between which the loop is to be inserted. 
+
+
+
+
+
+
+
+
 
 2. Homology model of Gadd45β
 a) First, we have to identify the protein sequence of Gadd45β. Go to UniProt (http://www.uniprot.org), type the Gadd45β UniProt AC (O75293) in the text box at the top and click on Search. On the result page, go to the sequence information (you can scroll-down until you reach the Sequence section or directly click on the "Sequence" link on the left). Click on the FASTA link and copy the sequence in FASTA format. 
