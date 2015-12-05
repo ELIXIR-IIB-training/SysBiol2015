@@ -99,26 +99,86 @@ Loop modelling
 
 A search is made through the PDB for known loops containing endpoints that match the residues between which the loop is to be inserted. 
 
-![stem loop](img/stem_loop) 
+![stem loop](img/stem_loop.tiff) 
 
-![stem loop scheme 1](img/loop_selection_1.tiff) ---> ![stem loop scheme 1](img/loop_selection_2)
+###Step 5: Side chain modeling 
+* Libraries of common rotamers extracted from high resolution X-ray structures are often used to position side chains 
+* The various rotamers are subsequently explored and scored with a variety of energy functions 
+
+###Step 6: Model optimisation  
+* To predict the side chain rotamers with high accuracy, we need the correct backbone, which in turn depends on the rotamers and their packing
+* The common approach to address this problem is to iteratively model the rotamers and backbone structure
+* First, we predict the rotamers, then remodel the backbone to accommodate rotamers, followed by a round of refitting the rotamers to the new backbone
+* This process is repeated until the solution converges 
+* This boils down to a series of rotamer prediction and energy minimisation steps 
+
+###Step 7: Model validation 
+* Every protein structure contains errors, and homology models are no exception 
+* The number of errors (for a given method) mainly depends on two values: 
+	- The percentage sequence identity between template and model-sequence 
+	- The number of errors in the template 
+* There are two principally different ways to estimate errors in a structure 
+	- Calculating the model's energy based on a force field 
+	- Determining normality indices that describe how well a given characteristic of the model resembles the same characteristic in real structures 
+
+###Step 8: Iteration to correct mistakes
+* When errors in the model are recognised and located, they can be corrected by iterating portions of the homology modeling process. 
+* Small errors that are introduced during the optimisation step can be removed by running a shorter molecular dynamics simulation 
+* A error in a loop can be corrected by choosing another loop conformation in the loop modeling step
+* Large mistakes in the backbone conformation sometimes require the complete process to be repeated with another alignment or even with a different template 
+
+Valuable resources for homology modelling are MODELLER and SWISS-MODEL.
+
+![modeller webpage](img/modeller.png)
+
+![swiss model homepage](img/swiss_model_2.png)
+![swiss model searchpage](img/swiss_model_2.png)
 
 
+###Homology model of Gadd45β
 
+1) First, we have to identify the protein sequence of Gadd45β. 
+Go to UniProt (http://www.uniprot.org), type the Gadd45β UniProt AC (O75293) in the text box at the top and click on Search. On the result page, go to the sequence information (you can scroll-down until you reach the Sequence section or directly click on the "Sequence" link on the left). Click on the FASTA link and copy the sequence in FASTA format. 
 
+![Gadd45β sequence in fasta format](img/gadd45_fasta.png)
 
+2) Second, we have to identify a suitable template for Gadd45β. 
+Go to HHPred and paste the Gadd45β in FASTA format into the Input text box. Inspect all the Search Options (but keep the default ones).
+In the "Job Options" section, specify a Job-ID (e.g. gadd45B). Then Submit your job. The run may last up to a few minutes. However, Gadd45β is a small protein (160 aa) and the template search should be quite fast.
 
+![hhpred homepage](img/hhapred_homepage.png)
 
-=======
+3) In the HHpred result page, inspect the proposed templates. 
 
-2. Homology model of Gadd45β
-a) First, we have to identify the protein sequence of Gadd45β. Go to UniProt (http://www.uniprot.org), type the Gadd45β UniProt AC (O75293) in the text box at the top and click on Search. On the result page, go to the sequence information (you can scroll-down until you reach the Sequence section or directly click on the "Sequence" link on the left). Click on the FASTA link and copy the sequence in FASTA format. 
-b) Second, we have to identify a suitable template for Gadd45β. Go to HHPred and paste the Gadd45β in FASTA format into the Input text box. Inspect all the Search Options (but keep the default ones).
-In the "Job Options" section, specify a Job-ID (e.g. gadd45B). Then Submit your job. The run may last up to a few minutes. However, this Gadd45β is a small protein (160 aa) and the template search should be quite fast.
-c) In the HHpred result page, inspect the proposed templates. Which is the best one? Why? Go to the alignment between Gadd45β and its best template and take sometime to inspect it. Is it reliable? Do you think it might be manually improved? Has it a good coverage? What is the sequence identity? What is the e-value? Are the values of these two parameters good enough to proceed with the model building?
-c) Once you are satisfied with the best template inspection, select it, then click on the "Create model" link immediately below the "Result, Histogram, etc." menu bar. In the resulting page, check whether the selected best template is the one that you actually selected, then click on the "Create model from manually selected template(s)" button.
-d) You will end up in the "Modeller" page.  The target-template alignment will appear in the Input text box ("Paste multiple alignment"). Notice that, if you want to run a local version of Modeller, you have to copy this alignment and paste it to a local text file with .ali extension. This is NOT what we are going to do here. Here, we will use the Modeller installation provided by The Bioinformatics Toolkit. Therefore, check the options and insert a MODELLER-key (you can use "modeliranje") and a name for your Job in the Job-ID text box (I suggest "gadd45B_model" or something similar). Then, Submit your Job.
-e) Congratulations! You have built a model for Gadd45β. You can Save it now. 
-f) After downloading it, open the file with your favourite Text Editor (gedit, vim, pico, nano, etc) and take a few minutes to inspect the file.
-g) Before going back to the prediction of the Gadd45β-MKK7 complex, we will spend a few minutes to check the quality of our model. 
-Go to the QMEAN Server for Model Quality Estimation (http://swissmodel.expasy.org/qmean/cgi/index.cgi), provide a name for your project (I suggest gadd45B_model_quality) and upload the gadd45B_model.pdb file and submit your job. Notice that the quality assessment may take some time. We will discuss the result of the QMEAN run later.
+![hhpred template output page](img/hhpred_template_1.png)
+![hhpred template output page 2](img/hhpred_template_2.png)
+
+* Which is the best one? 
+* Why? 
+
+4) Go to the alignment between Gadd45β and its best template and take sometime to inspect it. 
+* Is it reliable? 
+* Do you think it might be manually improved? 
+* Has it a good coverage?
+* What is the sequence identity?
+* What is the e-value? 
+* Are the values of these two parameters good enough to proceed with the model building?
+
+5) Once you are satisfied with the best template inspection, select it, then click on the "Create model" link immediately below the "Result, Histogram, etc." menu bar. In the resulting page, check whether the selected best template is the one that you actually selected, then click on the "Create model from manually selected template(s)" button.
+You will end up in the "Modeller" page. The target-template alignment will appear in the Input text box ("Paste multiple alignment"). 
+
+![target template alignment](target_template_alignment.png)
+
+Notice that, if you want to run a local version of Modeller, you have to copy this alignment and paste it to a local text file with .ali extension. This is NOT what we are going to do here. Here, we will use the Modeller installation provided by The Bioinformatics Toolkit. Therefore, check the options and insert a MODELLER-key (you can use "modeliranje") and a name for your Job in the Job-ID text box (I suggest "gadd45B_model" or something similar). 
+
+![modeller in the hhpred pipeline](img/hhpred_modeller.png]
+
+Then, Submit your Job.
+
+####Congratulations! You have built a model for Gadd45β. You can Save it now. 
+
+After downloading it, open the file with your favourite Text Editor (gedit, vim, pico, nano, etc) and take a few minutes to inspect the file.
+Before going back to the prediction of the Gadd45β-MKK7 complex, we will spend a few minutes to check the quality of our model. 
+
+###Model quality assessment
+Go to the [QMEAN Server for Model Quality Estimation](http://swissmodel.expasy.org/qmean/cgi/index.cgi), provide a name for your project (I suggest gadd45B_model_quality) and upload the gadd45B_model.pdb file and submit your job. Notice that the quality assessment may take some time. We will discuss the result of the QMEAN run later.
