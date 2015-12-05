@@ -99,9 +99,9 @@ Loop modelling
 
 A search is made through the PDB for known loops containing endpoints that match the residues between which the loop is to be inserted. 
 
-![stem loop](img/stem_loop) 
+![stem loop](img/stem_loop.tiff) 
 
-![stem loop scheme 1](img/loop_selection_1.tiff) ---> ![stem loop scheme 1](img/loop_selection_2)
+![stem loop scheme 1](img/loop_selection_1.tiff) ---> ![stem loop scheme 1](img/loop_selection_2.tiff)
 
 
 
