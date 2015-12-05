@@ -68,7 +68,7 @@ sequence identity|model quality
 7. Model validation (by hand or using different servers)
 8. Iteration to correct mistakes (if any)
 
-![steps homology modelling] (img/steps_homology_modelling.png] 
+![steps homology modelling] (img/steps_homology_modelling.png) 
 
 ###Step 1: Template recognition and initial alignment 
 *To identify the template, the program compares the query sequence to all the sequences of known structures in the PDB (e.g. BLAST)
