@@ -27,7 +27,7 @@ Where can we find the spatial coordinates of biological macromolecules?
 
 The Protein Data Bank ([PDB](http://www.rcsb.org)) is the major resource for macromolecular structures. This resource archives information about the 3D shapes of proteins, nucleic acids, and complex assemblies.
 
-![pdb homepage] (img/pdb_homepage.png =100x20)
+![pdb homepage] (img/pdb_homepage.png)
 
 A text file contains both meta information (annotation) lines and coordinate lines (starting by "ATOM").
 
