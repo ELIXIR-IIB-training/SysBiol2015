@@ -29,8 +29,6 @@ The Protein Data Bank ([PDB](http://www.rcsb.org)) is the major resource for mac
 
 ![pdb homepage] (img/pdb_homepage.png)
 
-<img src="img/pdb_homepage.png" style="width: 60px;">
-
 A text file contains both meta information (annotation) lines and coordinate lines (starting by "ATOM").
 
 ![pdb textfile] (img/pdb_textfile.png)
