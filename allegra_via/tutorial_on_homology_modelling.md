@@ -1,5 +1,24 @@
+---
+layout: topic
+title: Homology modelling
+author: Allegra Via
+minutes: 45
+---
 
-##Homology Modelling
+------------
+
+> ## Learning Objectives
+>
+> * Introduce Homology modelling principles
+> * Learn about online tools to build a model by homology
+> * Critically select templates
+> * Build the homology model of Gadd45β using HHPred 
+> * Do model quality assessment using QMEAN
+> * Point to relevant information on how to get help, and understand how to ask well formulated questions
+
+------------
+
+#Homology Modelling
 
 In this tutorial we will see how to build the homology model of Gadd45β. 
 
@@ -30,7 +49,7 @@ Computational approaches
 
 Is it possible to predict a protein structure from its sequence? 
 
-###Homology modelling
+##Homology modelling
 
 Homology modelling is a procedure to predict the 3D structure of a protein. It relies on a few principles:
 
@@ -183,5 +202,46 @@ Then, Submit your Job.
 After downloading it, open the file with your favourite Text Editor (gedit, vim, pico, nano, etc) and take a few minutes to inspect the file.
 Before going back to the prediction of the Gadd45β-MKK7 complex, we will spend a few minutes to check the quality of our model. 
 
-##Model quality assessment
-Go to the [QMEAN Server for Model Quality Estimation](http://swissmodel.expasy.org/qmean/cgi/index.cgi), provide a name for your project (I suggest gadd45B_model_quality) and upload the gadd45B_model.pdb file and submit your job. Notice that the quality assessment may take some time. We will discuss the result of the QMEAN run later.
+#Model quality assessment
+Go to the [QMEAN Server for Model Quality Estimation](http://swissmodel.expasy.org/qmean/cgi/index.cgi), provide a name for your project (I suggest gadd45B_model_quality) and upload the gadd45B_model.pdb file and submit your job. Notice that the quality assessment may take some time. The QMEAN output is described below. Try to find out what is the quality of your model without reading this tutorial but using the help pages provided on the QMEAN website.
+
+
+![qmean 1](qmean_1.png)
+
+
+![qmean 2](qmean_2.png)
+
+
+![qmean 3](qmean_3.png)
+
+
+![qmean 4](qmean_4.png)
+
+
+![qmean 5](qmean_5.png)
+
+
+![qmean 6](qmean_6.png)
+
+
+![qmean 7](qmean_7.png)
+
+#References
+
+#####Modeller
+•	Eswar, M. A. Marti-Renom, B. Webb, M. S. Madhusudhan, D. Eramian, M. Shen, U. Pieper, A. Sali (2006) Comparative Protein Structure Modeling With MODELLER. Current Protocols in Bioinformatics, John Wiley & Sons, Inc., Supplement 15, 5.6.1-5.6.30
+•	M.A. Marti-Renom, A. Stuart, A. Fiser, R. Sánchez, F. Melo, A. Sali. Comparative protein structure modeling of genes and genomes (2000) Annu. Rev. Biophys. Biomol. Struct. 29, 291-325
+•	Sali & T.L. Blundell (1993) Comparative protein modelling by satisfaction of spatial restraints. J. Mol. Biol. 234, 779-815
+•	Fiser, R.K. Do, & A. Sali (2000) Modeling of loops in protein structures, Protein Science 9. 1753-1773, 2000
+
+#####Swiss-Model
+•	Arnold K., Bordoli L., Kopp J., and Schwede T. (2006). The SWISS-MODEL Workspace: A web-based environment for protein structure homology modelling. Bioinformatics, 22,195-201. 
+•	Kiefer F, Arnold K, Künzli M, Bordoli L, Schwede T (2009). The SWISS-MODEL Repository and associated resources. Nucleic Acids Research. 37, D387-D392. 
+•	Guex, N., Peitsch, M.C., Schwede, T. (2009). Automated comparative protein structure modeling with SWISS-MODEL and Swiss-PdbViewer: A historical perspective. Electrophoresis, 30(S1), S162-S173.
+
+#####Other
+•	Chothia C, Lesk AM (1986): The relation between the divergence of sequence and structure in proteins. EMBO J. 5:823-836. 
+•	Rost B (1999): Twilight zone of protein sequence alignments. Protein Eng. 12:85-94. 
+•	Sander C, Schneider R (1991): Database of homology-derived protein structures and the structural meaning of sequence alignment. Proteins 9:56-68. 
+•	Venselaar H, Krieger E, Vriend G (2000) Homology Modeling
+
