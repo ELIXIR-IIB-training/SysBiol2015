@@ -27,11 +27,11 @@ Where can we find the spatial coordinates of biological macromolecules?
 
 The Protein Data Bank ([PDB](http://www.rcsb.org)) is the major resource for macromolecular structures. This resource archives information about the 3D shapes of proteins, nucleic acids, and complex assemblies.
 
-<img src= "img/pdb_homepage.png" width="70%">
+<img src= "img/pdb_homepage.png" width="60%">
 
 A text file contains both meta information (annotation) lines and coordinate lines (starting by "ATOM").
 
-![pdb textfile] (img/pdb_textfile.png)
+<img src= "img/pdb_textfile.png" width="60%">
 
 In most of the cases, the structure of proteins has not yet been determined and X-ray and NMR experiments are *expensive* and time demanding. 
 
@@ -57,7 +57,7 @@ Homology modelling is a procedure to predict the 3D structure of a protein. It r
 * Therefore the sequence should, in theory, contain enough information to obtain the structure 
 * Similar sequences have been found to adopt practically identical structures while distantly related sequences can still fold into similar structures
 
-![sequence-structure identity](img/chothia.png)
+<img src= "img/chothia.png" width="60%">
 Chothia et al. 1986; Sander et al. 1991; Rost 1999
 
 The predictive methods to adopt strongly depend on the percentage of sequence identity between the protein of unknown structure ("target") and a protein with known structure ("template").
@@ -68,7 +68,7 @@ The predictive methods to adopt strongly depend on the percentage of sequence id
 
 The percentage of sequence identity also affects the quality of the final model and, therefore, of the studies you can carry out with the model.
 
-![model quality vs xray resolution](img/structure_resolution.png)
+<img src= "img/structure_resolution.png" width="60%">
 
 sequence identity|model quality
 :-----------------:|--------------
@@ -87,7 +87,7 @@ sequence identity|model quality
 7. Model validation (by hand or using different servers)
 8. Iteration to correct mistakes (if any)
 
-![steps homology modelling] (img/steps_homology_modelling.png) 
+<img src= "img/steps_homology_modelling.png" width="60%">
 
 ###Step 1: Template recognition and initial alignment 
 * To identify the template, the program compares the query sequence to all the sequences of known structures in the PDB (e.g. BLAST)
@@ -116,7 +116,7 @@ Having identified one or more possible modeling templates using the initial scre
 
 Loop modelling: a search is made through the PDB for known loops containing endpoints that match the residues between which the loop is to be inserted. 
 
-![stem loop](img/stem_loop.tiff) 
+<img src= "img/stem_loop.tiff" width="60%">
 
 ###Step 5: Side chain modeling 
 * Libraries of common rotamers extracted from high resolution X-ray structures are often used to position side chains 
@@ -146,14 +146,11 @@ Loop modelling: a search is made through the PDB for known loops containing endp
 
 Valuable resources for homology modelling are MODELLER and SWISS-MODEL.
 
-![modeller webpage](img/modeller.png)
+<img src= "img/modeller.png" width="60%">
 
+<img src= "img/swiss_model_1.png" width="60%">
 
-![swiss model homepage](img/swiss_model_1.png)
-
-
-![swiss model searchpage](img/swiss_model_2.png)
-
+<img src= "img/swiss_model_2.png" width="60%">
 
 ###Homology model of Gadd45β
 
