@@ -116,7 +116,7 @@ Having identified one or more possible modeling templates using the initial scre
 
 Loop modelling: a search is made through the PDB for known loops containing endpoints that match the residues between which the loop is to be inserted. 
 
-<img src= "img/stem_loop.tiff" width="60%">
+<img src= "img/stem_loop.tiff" width="20%">
 
 ###Step 5: Side chain modeling 
 * Libraries of common rotamers extracted from high resolution X-ray structures are often used to position side chains 
@@ -146,31 +146,35 @@ Loop modelling: a search is made through the PDB for known loops containing endp
 
 Valuable resources for homology modelling are MODELLER and SWISS-MODEL.
 
-<img src= "img/modeller.png" width="60%">
+<img src= "img/modeller.png" width="30%">
 
-<img src= "img/swiss_model_1.png" width="60%">
 
-<img src= "img/swiss_model_2.png" width="60%">
+<img src= "img/swiss_model_1.png" width="30%">
+
+
+<img src= "img/swiss_model_2.png" width="30%">
+
 
 ###Homology model of Gadd45β
 
 1) First, we have to identify the protein sequence of Gadd45β. 
 Go to UniProt (http://www.uniprot.org), type the Gadd45β UniProt AC (O75293) in the text box at the top and click on Search. On the result page, go to the sequence information (you can scroll-down until you reach the Sequence section or directly click on the "Sequence" link on the left). Click on the FASTA link and copy the sequence in FASTA format. 
 
-![Gadd45β sequence in fasta format](img/gadd45_fasta.png)
+<img src= "img/gadd45_fasta.png" width="60%">
 
 2) Second, we have to identify a suitable template for Gadd45β. 
 Go to HHPred and paste the Gadd45β in FASTA format into the Input text box. Inspect all the Search Options (but keep the default ones).
 In the "Job Options" section, specify a Job-ID (e.g. gadd45B). Then Submit your job. The run may last up to a few minutes. However, Gadd45β is a small protein (160 aa) and the template search should be quite fast.
 
-![hhpred homepage](img/hhpred_homepage.png)
+<img src= "img/hhpred_homepage.png" width="60%">
+
 
 3) In the HHpred result page, inspect the proposed templates. 
 
-![hhpred template output page](img/hhpred_template_1.png)
+<img src= "img/hhpred_template_1.png" width="50%">
 
 
-![hhpred template output page 2](img/hhpred_template_2.png)
+<img src= "img/hhpred_template_2.png" width="50%">
 
 * Which is the best one? 
 * Why? 
@@ -186,11 +190,13 @@ In the "Job Options" section, specify a Job-ID (e.g. gadd45B). Then Submit your 
 5) Once you are satisfied with the best template inspection, select it, then click on the "Create model" link immediately below the "Result, Histogram, etc." menu bar. In the resulting page, check whether the selected best template is the one that you actually selected, then click on the "Create model from manually selected template(s)" button.
 You will end up in the "Modeller" page. The target-template alignment will appear in the Input text box ("Paste multiple alignment"). 
 
-![target template alignment](img/target_template_alignment.png)
+<img src= "img/target_template_alignment.png" width="50%">
+
 
 Notice that, if you want to run a local version of Modeller, you have to copy this alignment and paste it to a local text file with .ali extension. This is NOT what we are going to do here. Here, we will use the Modeller installation provided by The Bioinformatics Toolkit. Therefore, check the options and insert a MODELLER-key (you can use "modeliranje") and a name for your Job in the Job-ID text box (I suggest "gadd45B_model" or something similar). 
 
-![modeller in the hhpred pipeline](img/hhpred_modeller.png)
+<img src= "img/hhpred_modeller.png" width="50%">
+
 
 Then, Submit your Job.
 
@@ -203,25 +209,20 @@ Before going back to the prediction of the Gadd45β-MKK7 complex, we will spend 
 Go to the [QMEAN Server for Model Quality Estimation](http://swissmodel.expasy.org/qmean/cgi/index.cgi), provide a name for your project (I suggest gadd45B_model_quality) and upload the gadd45B_model.pdb file and submit your job. Notice that the quality assessment may take some time. The QMEAN output is described below. Try to find out what is the quality of your model without reading this tutorial but using the help pages provided on the QMEAN website.
 
 
-![qmean 1](img/qmean_1.png)
+<img src= "img/qmean_1.png" width="30%">
 
+<img src= "img/qmean_2.png" width="30%">
 
-![qmean 2](img/qmean_2.png)
+<img src= "img/qmean_3.png" width="30%">
 
+<img src= "img/qmean_4.png" width="30%">
 
-![qmean 3](img/qmean_3.png)
+<img src= "img/qmean_5.png" width="30%">
 
+<img src= "img/qmean_6.png" width="30%">
 
-![qmean 4](img/qmean_4.png)
+<img src= "img/qmean_7.png" width="30%">
 
-
-![qmean 5](img/qmean_5.png)
-
-
-![qmean 6](img/qmean_6.png)
-
-
-![qmean 7](img/qmean_7.png)
 
 #References
 
