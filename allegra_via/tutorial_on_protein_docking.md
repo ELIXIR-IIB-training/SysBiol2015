@@ -4,7 +4,7 @@ title: Protein-protein interaction prediction using docking
 author: Allegra Via and Domenico Raimondo
 minutes: 60 (excluding ClusPro run)
 ClusPro run: up to a few hours
-
+---
 Unless you can organise your teaching with a long break between the ClusPro job submission and the analysis of results, I strongly suggest you generate the solutions in advance and provide them to the students (showing them how they can download them).
 In order to use ClusPro, you need to have an account. Since it might take some time to get one, it would be better to generate them on the machines where the students are going to run ClusPro in advance.
 In any case, the procedure to request an account is described in this tutorial.
@@ -113,11 +113,11 @@ With a procedure similar to the one adopted for MKK7, go to Uniprot and identify
 
 For your convenience, you can find below a table summarising this information.
 
-|protein name|sequence residue num |sequence context |structure        |structure residue num|
-|------------|---------------------|-----------------|-----------------|---------------------|
-|MKK7        |K149		   |IAVKQMR          |2DYL             |K165                 |
-|            |R162                 |ENKRILM          |2DYL             |R178                 |
-|            |K157                 |SGNKEEN          |2DYL             |K173                 |
+|protein name|sequence residue num |sequence context |structure file   |structure residue num|
+|------------|:---------------------:|:-----------------:|:-----------------:|:---------------------:|
+|MKK7        |K149		   |IAVKQMR          |2DYL.pdb         |K165                 |
+|            |R162                 |ENKRILM          |2DYL.pdb         |R178                 |
+|            |K157                 |SGNKEEN          |2DYL.pdb         |K173                 |
 |            |                     |                 |                 |                     | 
 |Gadd45β     |E65                  |IDEEEEDD	     |gadd45B_model.pdb|E65                  |				
 |            |E66		   |IDEEEEDD         |gadd45B_model.pdb|E66                  |
@@ -159,42 +159,44 @@ This is the file you will upload in the ClusPro's Restraints option. Then, you c
 
 ###5. Analysis of ClusPro results
 The goal of ClusPro results' analyses is to identify, among the large number of docking conformations, those better fullfilling the restraints we have imposed. First, we have to navigate the ClusPro output page and identify sets of solutions ("models") we will download and further inspect. 
-The inspection of the docking models will be carried out using the [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/) program for the interactive visualization and analysis of molecular structures. The docking results analysis using UCSF Chimera is described in the [tutorial on docking results analysis using UCSF Chimera] (tutorial_on_docking_results_using_chimera.md) If you are familiar with  a different molecular graphics program (e.g. PyMol), don't hesitate to use it.
+The inspection of the docking models will be carried out using the [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/) program for the interactive visualization and analysis of molecular structures. The docking results' analysis using UCSF Chimera is described in the [tutorial on docking results analysis using UCSF Chimera] (tutorial_on_docking_results_using_chimera.md). If you are familiar with a different molecular graphics program (e.g. PyMol), don't hesitate to use it.
  
 In the ClusPro output page you can:
+
 a) Review the details of your Job (what input structures? What options have you used?)
+
 b) View the Model Scores. The most important aspect is to check whether there are docking solutions that form large clusters
 - In our case, the mkk7-gadd45b-attr-re Cluster 0 has 134 members, which is a good number; 
 - mkk7-gadd45b-restrai Cluster 0 has 132 members;
-In principle, you should choose – as your final solution - a conformation belonging to the largest cluster. 
-c) However, there are other parameters that count. An important one is whether the predicted complex fulfils the input restraints, i.e. (in our case), whether the MKK7 ATP bindig site actually interacts with Gadd45β residues in loop 1. In order to check this, you have to inspect the models displayed in the output page (each model is a representative of a cluster) and download those that seem a potentially correct conformation.
+In principle, you should choose – as your final solution - a conformation belonging to the largest cluster. However, there are other parameters that count. An important one is whether the predicted complex fulfils the input restraints, i.e. (in our case), whether the MKK7 ATP bindig site actually interacts with Gadd45β residues in loop 1. In order to check this, you have to inspect the models displayed in the output page (each model is a representative of a cluster) and download those that seem a potentially correct conformation.
 As mentioned above, you can use a molecular graphics software to display each model, highlight MKK7 K149, R162, K157 and verify their position relatively to Gadd45β E65, E66, and E113. 
-d) In the output page, you will see four different choices for your docking results, "Balanced", "Electrostatic-favored", and so on. Which one should you choose?
+
+c) In the output page, you will see four different choices for your docking results, "Balanced", "Electrostatic-favored", and so on. Which one should you choose?
 CluPro provides many different options for docking because they believe good results go hand-in-hand with experimental knowledge of the complex. If you don't have any prior knowledge of what forces dominate in your complex, they recommend using the balanced coefficients. 
 For example, if you know from experiments that the receptor and the ligand have been observed to separate when subjected to ionic force in vitro, the interaction will likely be "Electrostatic-favored". Instead, if the two partners tend to separate when immersed in apolar solvents, they will likely be "Hydrophobic separated". If your complex is antibody-antigen, they recommend using the antibody mode.
-f) In our case, we know that interactions between MKK7 and Gadd45β occur between basic (alkaline) MKK7 residues and acidic Gadd45 residues. Therefore, it makes sense to also have a look at "Electrostatic-favored" solutions. 
+
+d) In our case, we know that interactions between MKK7 and Gadd45β occur between basic (alkaline) MKK7 residues and acidic Gadd45 residues. Therefore, it makes sense to also have a look at "Electrostatic-favored" solutions. 
 
 ###6.References
 
 #####Docking
-•	Halperin I, Ma B, Wolfson H, Nussinov R (2002) Principles of docking: an overview of search algorithms and a guide to scoring functions. PROTEINS: Structure, Function, and Generics 47: 409-443
-•	Katchalski-Katzir,E., Shariv,I., Eisenstein,M., Friesem,A., Aflalo,C. and Vakser,I.A. (1992) Molecular surface recognition—determination of geometric fit between proteins and their ligands by correlation techniques. Proc. Natl Acad. Sci. USA, 89, 2195–2199.
-•	Vakser,I.A. (1996) Low-resolution docking: prediction of complexes for underdetermined structures. Biopolymers, 39, 455–464.
-•	Ritchie,D.W. and Kemp,G.J.L. (2000) Protein docking using spherical polar Fourier correlations. Proteins, 39, 178–194.
+* Halperin I, Ma B, Wolfson H, Nussinov R (2002) Principles of docking: an overview of search algorithms and a guide to scoring functions. PROTEINS: Structure, Function, and Generics 47: 409-443
+* Katchalski-Katzir,E., Shariv,I., Eisenstein,M., Friesem,A., Aflalo,C. and Vakser,I.A. (1992) Molecular surface recognition—determination of geometric fit between proteins and their ligands by correlation techniques. Proc. Natl Acad. Sci. USA, 89, 2195–2199.
+* Vakser,I.A. (1996) Low-resolution docking: prediction of complexes for underdetermined structures. Biopolymers, 39, 455–464.
+* Ritchie,D.W. and Kemp,G.J.L. (2000) Protein docking using spherical polar Fourier correlations. Proteins, 39, 178–194.
 
 #####Clustering
-•	Shortle,D., Simons,K.T. and Baker,D. (1998) Clustering of low-energy conformations near the native structures of small proteins. Proc. Natl Acad. Sci., USA, 95, 11158–11162
-•	Camacho,C.J. and Gatchell,D. (2003) Successful discrimination of protein interactions. Proteins, 52, 92–97
+* Shortle,D., Simons,K.T. and Baker,D. (1998) Clustering of low-energy conformations near the native structures of small proteins. Proc. Natl Acad. Sci., USA, 95, 11158–11162
+* Camacho,C.J. and Gatchell,D. (2003) Successful discrimination of protein interactions. Proteins, 52, 92–97
 
 #####ClusPro
-•	Comeau, S. R., D. Gatchell, S. Vajda, and C. J. Camacho. 2004. ClusPro: an automated docking and discrimination method for the prediction of protein complexes. Bioinformatics. 20:45–50
+* Comeau, S. R., D. Gatchell, S. Vajda, and C. J. Camacho. 2004. ClusPro: an automated docking and discrimination method for the prediction of protein complexes. Bioinformatics. 20:45–50
 
 Haddock 
-•	Dominguez C, Boelens R, Bonvin AMJJ (2003) HADDOCK:  A Protein−Protein Docking Approach Based on Biochemical or Biophysical Information. JACS 125, 1731
-•	de Vries SJ, van Dijk M, Bonvin AMJJ (2010) The HADDOCK web server for data-driven biomolecular docking. Nature Protocols, 5, 883-897 
+* Dominguez C, Boelens R, Bonvin AMJJ (2003) HADDOCK:  A Protein−Protein Docking Approach Based on Biochemical or Biophysical Information. JACS 125, 1731
+* de Vries SJ, van Dijk M, Bonvin AMJJ (2010) The HADDOCK web server for data-driven biomolecular docking. Nature Protocols, 5, 883-897 
 
 #####Others
-•	Papa S, Monti SM, Vitale RM, Bubici C, Jayawardena S, Alvarez K, De Smaele E, Dathan N, Pedone C, Menotti Ruvo, Franzoso G (2007) Insights into the Structural Basis of the GADD45_-mediated Inactivation of the JNK Kinase, MKK7/JNKK2. JBC 282:19029-19041
-•	Tornatore L, Marasco D, Dathan N, Vitale RM, Benedetti E, Papa S, Franzoso G, Ruvo M, Monti SM (2008) J. Mol. Biol. 378: 97–111
-•	Perkins JR, Diboun I, Dessailly BH, Lees JG, Orengo C (2010) Transient Protein-Protein Interactions: Structural, Functional, and Network Properties. Structure 18:1233-1243
-
+* Papa S, Monti SM, Vitale RM, Bubici C, Jayawardena S, Alvarez K, De Smaele E, Dathan N, Pedone C, Menotti Ruvo, Franzoso G (2007) Insights into the Structural Basis of the GADD45_-mediated Inactivation of the JNK Kinase, MKK7/JNKK2. JBC 282:19029-19041
+* Tornatore L, Marasco D, Dathan N, Vitale RM, Benedetti E, Papa S, Franzoso G, Ruvo M, Monti SM (2008) J. Mol. Biol. 378: 97–111
+* Perkins JR, Diboun I, Dessailly BH, Lees JG, Orengo C (2010) Transient Protein-Protein Interactions: Structural, Functional, and Network Properties. Structure 18:1233-1243
