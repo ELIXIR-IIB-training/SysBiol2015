@@ -171,10 +171,8 @@ In the "Job Options" section, specify a Job-ID (e.g. gadd45B). Then Submit your 
 
 3) In the HHpred result page, inspect the proposed templates. 
 
-<img src= "img/hhpred_template_1.png" width="50%">
+<img src= "img/hhpred_template_1.png" width="50%"><img src= "img/hhpred_template_2.png" width="50%">
 
-
-<img src= "img/hhpred_template_2.png" width="50%">
 
 * Which is the best one? 
 * Why? 
