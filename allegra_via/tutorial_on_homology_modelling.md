@@ -209,19 +209,19 @@ Before going back to the prediction of the Gadd45β-MKK7 complex, we will spend 
 Go to the [QMEAN Server for Model Quality Estimation](http://swissmodel.expasy.org/qmean/cgi/index.cgi), provide a name for your project (I suggest gadd45B_model_quality) and upload the gadd45B_model.pdb file and submit your job. Notice that the quality assessment may take some time. The QMEAN output is described below. Try to find out what is the quality of your model without reading this tutorial but using the help pages provided on the QMEAN website.
 
 
-<img src= "img/qmean_1.png" width="30%">
+<img src= "img/qmean_1.png" width="50%"><img src= "img/qmean_1.png" width="50%">
 
-<img src= "img/qmean_2.png" width="30%">
+<img src= "img/qmean_2.png" width="50%">
 
-<img src= "img/qmean_3.png" width="30%">
+<img src= "img/qmean_3.png" width="50%">
 
-<img src= "img/qmean_4.png" width="30%">
+<img src= "img/qmean_4.png" width="50%">
 
-<img src= "img/qmean_5.png" width="30%">
+<img src= "img/qmean_5.png" width="50%">
 
-<img src= "img/qmean_6.png" width="30%">
+<img src= "img/qmean_6.png" width="50%">
 
-<img src= "img/qmean_7.png" width="30%">
+<img src= "img/qmean_7.png" width="50%">
 
 
 #References
