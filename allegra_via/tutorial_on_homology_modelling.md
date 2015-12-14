@@ -41,7 +41,7 @@ In most of the cases, the structure of proteins has not yet been determined and 
 
 What can we do when the coordinates of a protein are not available in the PDB? 
 
-Computational approaches
+*Computational approaches:*
 
 * Fast (minutes/hours), cheap (PC)
 * Correct solutions in ~60% of cases
@@ -146,13 +146,13 @@ Loop modelling: a search is made through the PDB for known loops containing endp
 
 Valuable resources for homology modelling are MODELLER and SWISS-MODEL.
 
-<img src= "img/modeller.png" width="30%">
+<img src= "img/modeller.png" width="50%">
 
 
-<img src= "img/swiss_model_1.png" width="30%">
+<img src= "img/swiss_model_1.png" width="50%">
 
 
-<img src= "img/swiss_model_2.png" width="30%">
+<img src= "img/swiss_model_2.png" width="50%">
 
 
 ###Homology model of Gadd45β
@@ -194,7 +194,6 @@ You will end up in the "Modeller" page. The target-template alignment will appea
 Notice that, if you want to run a local version of Modeller, you have to copy this alignment and paste it to a local text file with .ali extension. This is NOT what we are going to do here. Here, we will use the Modeller installation provided by The Bioinformatics Toolkit. Therefore, check the options and insert a MODELLER-key (you can use "modeliranje") and a name for your Job in the Job-ID text box (I suggest "gadd45B_model" or something similar). 
 
 <img src= "img/hhpred_modeller.png" width="50%">
-
 
 Then, Submit your Job.
 
