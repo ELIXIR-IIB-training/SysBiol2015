@@ -6,7 +6,9 @@ based on: a practical by D. Raimondo
 minutes: 60 (excluding ClusPro run)
 ClusPro run: up to a few hours
 ---
-Unless you can organise your teaching with a long break between the ClusPro job submission and the analysis of results, I strongly suggest you generate the solutions in advance and provide them to the students. In order to use ClusPro, you can generate an account (advised). However, you can also run a job without being registered. The procedure to request an account is described in this tutorial.
+
+> Unless you can organise your teaching with a long break between the ClusPro job submission and the analysis of results, I strongly suggest you generate the solutions in advance and provide them to the students. In order to use ClusPro, you can generate an account (advised). However, you can also run a job without being registered. The procedure to request an account is described in this tutorial.
+
 ---
 
 ------------
