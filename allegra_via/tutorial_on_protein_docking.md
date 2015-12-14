@@ -41,7 +41,7 @@ R162         | E66
 K157         | E113
 
 
-<img src= "img/mkk7_gadd45B.tiff" width="60%">
+<img src= "img/mkk7_gadd45B.tiff" width="50%">
 Figure 9C from Papa et al.2007
 
 
