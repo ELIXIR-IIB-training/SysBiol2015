@@ -1,13 +1,13 @@
 ---
 layout: topic
 title: Protein-protein interaction prediction using docking
-author: Allegra Via and Domenico Raimondo
+author: Allegra Via  
+based on: a practical from Domenico Raimondo
 minutes: 60 (excluding ClusPro run)
 ClusPro run: up to a few hours
 ---
-Unless you can organise your teaching with a long break between the ClusPro job submission and the analysis of results, I strongly suggest you generate the solutions in advance and provide them to the students (showing them how they can download them).
-In order to use ClusPro, you need to have an account. Since it might take some time to get one, it would be better to generate them on the machines where the students are going to run ClusPro in advance.
-In any case, the procedure to request an account is described in this tutorial.
+Unless you can organise your teaching with a long break between the ClusPro job submission and the analysis of results, I strongly suggest you generate the solutions in advance and provide them to the students. 
+In order to use ClusPro, you can generate an account (advised). However, you can also run a job without being registered. The procedure to request an account is described in this tutorial.
 ---
 
 ------------
@@ -17,12 +17,12 @@ In any case, the procedure to request an account is described in this tutorial.
 > * Introduce the biological context of the MKK7-Gadd45B interaction
 > * Identification of restraints to limit docking conformations
 > * Predict the MKK7-Gadd45B complex using ClusPro
-> * Analyse ClusPro results
+> * Explore ClusPro results
 
 
 # Protein-protein interaction prediction using docking
 
-In this tutorial we are going to predict and analyse the structural complex between the human MKK7 and Gadd45B protein structures. Before we start using bioinformatics tools and resources, we have to learn something about these two proteins and their interaction. 
+In this tutorial you are going to predict and analyse the structural complex between the human MKK7 and Gadd45B protein structures. Before we start using bioinformatics tools and resources, we have to learn something about these two proteins and their interaction. 
 
 > Studying the literature and having a good grasp on the biological problem you are dealing with, is essential to take full advantage of predictions. Predictions are simply predictions until you don't analyse them in the light of the knowledge deriving from wet experiments.
 
