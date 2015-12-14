@@ -10,9 +10,6 @@ ClusPro run: up to a few hours
 > Unless you can organise your teaching with a long break between the ClusPro job submission and the analysis of results, I strongly suggest you generate the solutions in advance and provide them to the students. In order to use ClusPro, you can generate an account (advised). However, you can also run a job without being registered. The procedure to request an account is described in this tutorial.
 
 ---
-
-------------
-
 > ## Learning Objectives
 >
 > * Introduce the biological context of the MKK7-Gadd45B interaction
@@ -44,7 +41,9 @@ R162         | E66
 K157         | E113
 
 
-![figure 9C from Papa et al. 2007](img/mkk7_gadd45B.tiff)
+<img src= "img/mkk7_gadd45B.tiff" width="60%">
+Figure 9C from Papa et al.2007
+
 
 
 ##Sharpening your pencils
