@@ -153,8 +153,8 @@ We also want to see how the "Restraints" option works. This is a bit more compli
 If you have any knowledge about residues that should be close together in the interface, you can make a restraints file and use the knowledge you have to only produce results which satisfy your restraints. For example, the literature can provide information about interacting residues.  Restraints can be combined into restraint groups, and groups are combined into a restraint set, which allows users to specify some logic about how many restraints are required to be satisfied.
 The restraint file needs to be in *json* format and you can generate it using the *restraint generator*. Each restraint specifies a pair of residues, one from the receptor and one form the ligand, and an acceptable distance range for the restraint to be satisfied. Once you have created a set of restraints, you can copy it to a text file with a .json suffix:
 ```
-{"required":1,"groups":[{"required":2,"restraints":[{"type":"residue","dmax":2.5,"dmin":1,"rec_chain":"A165","lig_chain":"A65"},
-{"type":"residue","dmax":2.5,"dmin":1,"rec_chain":"A178","lig_chain":"A66"},
+{"required":1,"groups":[{"required":2,"restraints":[{"type":"residue","dmax":2.5,"dmin":1,"rec_chain":"A165",
+"lig_chain":"A65"}, {"type":"residue","dmax":2.5,"dmin":1,"rec_chain":"A178","lig_chain":"A66"},
 {"type":"residue","dmax":4,"dmin":1,"rec_chain":"A173","lig_chain":"A113"}]}]}
 ```
 This is the file you will upload in the ClusPro's Restraints option. Then, you can run your job.
