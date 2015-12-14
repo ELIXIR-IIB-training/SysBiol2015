@@ -57,7 +57,7 @@ Before starting the actual study of the interaction, we need to do a number of t
 Once we have collected these data, we will be ready to use [ClusPro](http://cluspro.bu.edu/home.php)to predict the MKK7-Gadd45β complex.
 
 ```
-###Note:
+Note:
 In the following you will need Gadd45β and MKK7 UniprotKB accession numbers (ACs). I suggest that you go to [UniprotKB](http://www.uniprot.org) and retrieve them. Remember that we are using the human proteins! If you know well UniprotKB or you are too lazy, here they are:
 
 Gadd45β UniprotKB AC: O75293 
