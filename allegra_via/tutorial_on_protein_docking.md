@@ -142,23 +142,23 @@ By clicking on the Advanced Options, you will notice that several options appear
 
 
 ####Attraction and Repulsion
-We want to run a first job (I suggest "mkk7-gadd45b-attr-rep" or something similar for the job name) 
+We want to run a first job (I suggest "mkk7-gadd45b-attr-rep" or something similar for the job name) where we
 specify that the MKK7 Lys149 (2DYL: K165), R162 (2DYL: R178) and Lys157 (2DYL: K173) have attractive properties toward Gadd45β Glu65 (gadd45B_model.pdb: E65), Glu66 (gadd45B_model.pdb: E66), and Glu113 (gadd45B_model.pdb: E113), respectively.
 This can be done by specifying "a-165 a-178 a-173" in the "Attraction" text box for the Receptor and "a-65 a-66 a-113" in the "Attraction" text box for the Ligand.
 You can now run it.
 Notice that it may take hours to get your results.
 
 ####Restraints
-We also want to see how the "Restraints" option works. This is a bit more complicated, but just a bit. 
+We also want to see how the "Restraints" option works. This is a bit more complicated, but just a little bit. 
 If you have any knowledge about residues that should be close together in the interface, you can make a restraints file and use the knowledge you have to only produce results which satisfy your restraints. For example, the literature can provide information about interacting residues.  Restraints can be combined into restraint groups, and groups are combined into a restraint set, which allows users to specify some logic about how many restraints are required to be satisfied.
-The restraint file needs to be in json format and you can generate it using the restraint generator. Each restraint specifies a pair of residues, one from the receptor and one form the ligand, and an acceptable distance range for the restraint to be satisfied. Once you have created a set of restraints, you can copy it to a text file with a .json suffix:
+The restraint file needs to be in *json* format and you can generate it using the *restraint generator*. Each restraint specifies a pair of residues, one from the receptor and one form the ligand, and an acceptable distance range for the restraint to be satisfied. Once you have created a set of restraints, you can copy it to a text file with a .json suffix:
 ```
 {"required":1,"groups":[{"required":2,"restraints":[{"type":"residue","dmax":2.5,"dmin":1,"rec_chain":"A165","lig_chain":"A65"},{"type":"residue","dmax":2.5,"dmin":1,"rec_chain":"A178","lig_chain":"A66"},{"type":"residue","dmax":4,"dmin":1,"rec_chain":"A173","lig_chain":"A113"}]}]}
 ```
 This is the file you will upload in the ClusPro's Restraints option. Then, you can run your job.
 
 ###5. Analysis of ClusPro results
-The goal of ClusPro results' analyses is to identify, among the large number of docking conformations, those better fullfilling the restraints we have imposed. First, we have to navigate the ClusPro output page and identify sets of solutions ("models") we will download and further inspect. 
+The goal of ClusPro results' analyses is to identify, among the large number of docking conformations, those better fullfilling the restraints you have imposed. First, we have to navigate the ClusPro output page and identify sets of solutions ("models") we will download and further inspect. 
 The inspection of the docking models will be carried out using the [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/) program for the interactive visualization and analysis of molecular structures. The docking results' analysis using UCSF Chimera is described in the [tutorial on docking results analysis using UCSF Chimera] (tutorial_on_docking_results_using_chimera.md). If you are familiar with a different molecular graphics program (e.g. PyMol), don't hesitate to use it.
  
 In the ClusPro output page you can:
