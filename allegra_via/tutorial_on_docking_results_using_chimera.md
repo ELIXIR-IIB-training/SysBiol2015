@@ -54,9 +54,9 @@ Hide ribbons to reveal the backbone atoms, then show ribbons again:
 
 Try manipulating the structure in the main window with the mouse. By default:
 
-# the left mouse button controls rotation
-# the middle mouse button controls XY translation (panning)
-# the right mouse button performs scaling (zooming)
+* the left mouse button controls rotation
+* the middle mouse button controls XY translation (panning)
+* the right mouse button performs scaling (zooming)
 
 <img src= "img/chimera_table_2.tiff" width="50%">
 
