@@ -62,9 +62,10 @@ Chothia et al. 1986; Sander et al. 1991; Rost 1999
 
 The predictive methods to adopt strongly depend on the percentage of sequence identity between the protein of unknown structure ("target") and a protein with known structure ("template").
 
-* Comparative modeling                      > 30% identity
-* Threading/Fold recognition                0 – 30% identity
-* Ab initio/de novo                         no homologous
+|Comparative modeling | > 30% identity|
+|---------------------|---------------|
+|Threading/Fold recognition|0 – 30% identity|
+|Ab initio/de novo|no homologous|
 
 The percentage of sequence identity also affects the quality of the final model and, therefore, of the studies you can carry out with the model.
 
