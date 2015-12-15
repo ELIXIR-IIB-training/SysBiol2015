@@ -116,7 +116,7 @@ Having identified one or more possible modeling templates using the initial scre
 
 Loop modelling: a search is made through the PDB for known loops containing endpoints that match the residues between which the loop is to be inserted. 
 
-<img src= "img/stem_loop.tiff" width="20%">
+<img src= "img/stem_loop.jpg" width="20%">
 
 ###Step 5: Side chain modeling 
 * Libraries of common rotamers extracted from high resolution X-ray structures are often used to position side chains 

@@ -26,7 +26,7 @@ Start Chimera by clicking or doubleclicking the Chimera icon (depending on its l
 
 A splash screen will appear, to be replaced in a few seconds by the main Chimera window containing either the graphics display or the Rapid Access list of recently used files (it doesn't matter which, since opening a structure will automatically switch the display to the graphics window). If you like, enlarge the window by clicking and dragging its lower right corner. The window can also be moved by clicking its top bar and dragging.
 
-<img src= "img/chimera_table_1.tiff" width="50%">
+<img src= "img/chimera_table_1.jpg" width="50%">
 
 ##Opening a structure
 
@@ -58,7 +58,7 @@ Try manipulating the structure in the main window with the mouse. By default:
 * the middle mouse button controls XY translation (panning)
 * the right mouse button performs scaling (zooming)
 
-<img src= "img/chimera_table_2.tiff" width="50%">
+<img src= "img/chimera_table_2.jpg" width="50%">
 
 
 If you are using a touchpad or single-button mouse, modifier keys allow emulating the middle and right mouse buttons. These are *option* and *command* on Mac keyboards. Multitouch gestures on a Mac touchpad are enabled by default, but can be turned off in the preferences (menu: *Favorites→Preferences*, category *Mouse*). Continue moving and scaling the structure with the mouse in the graphics window as desired throughout the tutorial.
@@ -80,7 +80,7 @@ Spend some time selecting various parts of the structure. An easy way to clear t
 
 In general, operations performed with the Chimera Actions menu apply to the current selection. Selections can be made in many ways, including with the Select menu or with the mouse (as described above). When nothing is selected, the Actions menu applies to everything.
 
-<img src= "img/chimera_table_3.tiff" width="50%">
+<img src= "img/chimera_table_3.jpg" width="50%">
 
 
 The following will color all residues named LYS hot pink.
@@ -201,7 +201,7 @@ A(ctive) - whether activated for motion
 S(hown) - whether display-enabled
 model name
 
-<img src= "img/chimera_model_panel.tiff" width="50%">
+<img src= "img/chimera_model_panel.jpg" width="50%">
 
 Try toggling the checkboxes to see what happens; a model that is not activated for motion cannot be rotated or translated interactively. In the list of functions on the right side of the Model Panel (not the button at the bottom), click close to remove model 1zik. Use the Close button at the bottom to close the Model Panel.
 
@@ -250,7 +250,7 @@ Command: color hot pink
 
 A basic specification may contain *residue names, residue numbers, chain* identifiers, and/or atom names (see the table of symbols below).
 
-<img src= "img/chimera_atom_specification_symbol.tiff" width="50%">
+<img src= "img/chimera_atom_specification_symbol.jpg" width="50%">
 
 Note also that commands can be truncated to unique strings.
 
