@@ -28,7 +28,7 @@ A splash screen will appear, to be replaced in a few seconds by the main Chimera
 
 <img src= "img/chimera_table_1.tiff" width="50%">
 
-#Opening a structure
+##Opening a structure
 
 Now open a structure. Choose 
 
@@ -68,7 +68,7 @@ When the mouse focus is in the graphics window (you may need to click into it if
 
 You can see from the balloons that this structure contains two peptide chains, A and "No ID", and no water (HOH residues).
 
-#Selection with the mouse
+##Selection with the mouse
 
 In combination with modifier keys, the mouse buttons have additional functions. By default, picking from the screen (a type of selection) is done by Ctrl-clicking an atom or bond with the left mouse button, Btn1. You can also drag out a selection area with Ctrl-Btn1 (sweep out an area before releasing). Shift-Ctrl-Btn1 adds to or toggles an existing selection. The selection is outlined in green, and placing the mouse cursor over the green magnifying glass icon near the bottom right corner of the window reports what is selected in a pop-up “balloon.”
 
@@ -76,7 +76,7 @@ The arrow keys can be used to broaden (↑), narrow (↓), or invert (→) a sel
 
 Spend some time selecting various parts of the structure. An easy way to clear the selection (deselect everything) is to use Ctrl-Btn1 in any blank space in the graphics window.
 
-# Selection/Action
+## Selection/Action
 
 In general, operations performed with the Chimera Actions menu apply to the current selection. Selections can be made in many ways, including with the Select menu or with the mouse (as described above). When nothing is selected, the Actions menu applies to everything.
 
@@ -189,7 +189,7 @@ Turn off residue labels, hide ribbon, display all atoms, and color by element:
 
 The by element coloring is the same as by heteroatom except it also color-codes carbons (gray).
 
-# Models and model status
+## Models and model status
 
 Generally, each file of coordinates opened in Chimera becomes a model with an associated model ID number. Models are assigned successive numbers starting with 0. The Model Panel lists the current models and enables many operations upon them. Open this tool with *Tools→General Controls→Model Panel*.
 
@@ -209,7 +209,7 @@ You can exit from Chimera with File→Quit.
 
 # Working with Commands
 
-##Manipulation, Selection, and Chains
+## Manipulation, Selection, and Chains
 
 You can interact with Chimera also using commands. You may prefer using commands, menus or both. In order to use commands, you have to show the Command Line with Tools→General Controls→Command Line. By default, the Command Line. By default, the Command Line is also listed in the Favorites menu.
 
